@@ -1,0 +1,59 @@
+.sidebar {
+  width: 200px;
+  height: auto;
+  background-color: #2E2E2E;
+}
+  
+  .sidebar__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+.sidebar_text_logo{
+  text-align: left;
+  text-decoration: none;
+  color : white;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #A4A4A4;
+}
+
+  .sidebar_description{
+    text-align: left;
+    text-decoration: none;
+    font-size: 10px;
+    color: #A4A4A4;
+    padding: 5px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  
+  .sidebar__menu-item {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar__menu-link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+  }
+  
+  .sidebar__menu-link:hover {
+    background-color: white;
+    color: black
+  }
+
+  .app-container {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* 사이드바 영역과 나머지 영역을 1:1 비율로 설정 */
+    height: 100vh; /* 전체 화면 높이로 설정 */
+  }
+  
+  .content-container {
+    overflow-y: auto; /* 컨텐츠가 넘칠 경우 스크롤바 표시 */
+  }
